@@ -1,0 +1,39 @@
+{
+    "minerales": {
+        "diamantes": {
+            "descripcion": "Los diamantes se encuentran mejor entre las capas -64 y 16, especialmente en la capa -59.",
+            "mejor_altura": -59,
+            "rareza": "raro"
+        },
+        "esmeraldas": {
+            "descripcion": "Las esmeraldas son muy raras y se encuentran principalmente en montañas, entre las capas -64 y 32.",
+            "mejor_altura": 4,
+            "rareza": "muy raro"
+        },
+        "oro": {
+            "descripcion": "El oro se encuentra entre las capas -64 y 32, siendo más común entre las capas 0 y 32.",
+            "mejor_altura": 16,
+            "rareza": "poco común"
+        },
+        "redstone": {
+            "descripcion": "El redstone se encuentra mejor entre las capas -64 y 16, especialmente en la capa 5.",
+            "mejor_altura": 5,
+            "rareza": "común"
+        },
+        "carbón": {
+            "descripcion": "El carbón es el mineral más común y se encuentra en casi todas las capas del mundo.",
+            "mejor_altura": 95,
+            "rareza": "muy común"
+        },
+        "hierro": {
+            "descripcion": "El hierro es uno de los minerales más comunes, se encuentra entre las capas 0 y 64.",
+            "mejor_altura": 20,
+            "rareza": "común"
+        },
+        "lapislázuli": {
+            "descripcion": "El lapislázuli se encuentra principalmente entre las capas -64 y 32.",
+            "mejor_altura": 14,
+            "rareza": "raro"
+        }
+    }
+}
