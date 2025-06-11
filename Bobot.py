@@ -99,6 +99,57 @@ async def lapislazuli_cmd(ctx):
     
     await ctx.send(mensaje)
 
+@bot.command()
+async def mundos(ctx):
+    mensaje = ""
+    for mundo, info in data["mundos"].items():
+        mensaje += f"🌍 **{mundo.capitalize()}**\n\n"
+    await ctx.send(mensaje)
+
+@bot.command()
+async def biomas_overworld(ctx):
+    mensaje = ""
+    for biomas, info in data["mundos"]["overworld"]["biomas"].items():
+        mensaje += f"🌱 **{biomas.capitalize()}**\n"
+        mensaje += f"📜 Descripción: {info['descripcion']}\n\n"
+
+    await ctx.send(mensaje)  # Envía cada parte por separado
+
+@bot.command()
+async def biomas_nether(ctx):
+    mensaje = ""
+    for biomas, info in data["mundos"]["nether"]["biomas"].items():
+        mensaje += f"🌱 **{biomas.capitalize()}**\n"
+        mensaje += f"📜 Descripción: {info['descripcion']}\n\n"
+
+    await ctx.send(mensaje)  # Envía cada parte por separado
+
+@bot.command()
+async def biomas_end(ctx):
+    mensaje = ""
+    for biomas, info in data["mundos"]["end"]["biomas"].items():
+        mensaje += f"🌱 **{biomas.capitalize()}**\n"
+        mensaje += f"📜 Descripción: {info['descripcion']}\n\n"
+
+    await ctx.send(mensaje)
+
+@bot.command()
+async def mobs(ctx):
+    mensaje = ""
+    overworld_mobs = data["mundos"]["overworld"]["mobs"]
+    
+    for tipo, mobs in overworld_mobs.items():  # tipo será "hostil" o "pasivos"
+        mensaje += f"🐶 **{tipo.capitalize()}**:\n"
+        for mob, info in mobs.items():
+            mensaje += f"🐾 **{mob.capitalize()}**\n"
+            mensaje += f"📜 Descripción: {info['descripcion']}\n"
+            mensaje += f"💔 Vida: {info['vida']}\n"
+            mensaje += f"⚔️ Daño: {info['daño']}\n\n"
+
+    await ctx.send(mensaje)
+
+
+    
 
 
 TOKEN = os.getenv("DISCORD_TOKEN")

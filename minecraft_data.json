@@ -35,5 +35,257 @@
             "mejor_altura": 14,
             "rareza": "raro"
         }
-    }
+    },
+    "mundos": {
+        "overworld": {
+            "biomas": {
+                "plains": {
+                    "descripcion": "Una zona plana cubierta de hierba con pocos árboles y flores.",
+                    "tipo": "templado"
+                },
+                "forest": {
+                    "descripcion": "Área boscosa con árboles de roble y abedul, hogar de muchos animales pasivos.",
+                    "tipo": "templado"
+                },
+                "taiga": {
+                    "descripcion": "Bosques fríos con abetos, lobos y zorros.",
+                    "tipo": "frío"
+                },
+                
+                "desert": {
+                    "descripcion": "Bioma árido de arena con cactus y templos del desierto.",
+                    "tipo": "cálido"
+                },
+                "jungle": {
+                    "descripcion": "Zona densa con árboles gigantes, lianas y loros.",
+                    "tipo": "cálido"
+                },
+                "mountains": {
+                    "descripcion": "Grandes elevaciones de terreno cubiertas de piedra y nieve en las alturas.",
+                    "tipo": "frío"
+                },
+                
+                
+                "ocean": {
+                    "descripcion": "Grandes extensiones de agua con ruinas y monumentos oceánicos.",
+                    "tipo": "húmedo"
+                }
+
+                },
+
+                "mobs": {
+                    "hostil":{
+                        "Zombie": {
+                            "descripcion": "No-muerto que ataca al jugador cuerpo a cuerpo.",
+                            "vida": 20,  
+                            "daño": 6    
+                        },
+                        "Esqueleto": {
+                            "descripcion": "Dispara flechas a distancia.",
+                            "vida": 20,
+                            "daño": 4    
+                        },
+                        "Creeper": {
+                            "descripcion": "Se acerca y explota causando gran daño.",
+                            "vida": 20,
+                            "daño": 49   
+                        },
+                        "Araña": {
+                            "descripcion": "Salta y muerde al jugador.",
+                            "vida": 16,
+                            "daño": 4    
+                        },
+                        "Enderman": {
+                            "descripcion": "Neutral hasta ser provocado. Se teletransporta y golpea fuerte.",
+                            "vida": 40,
+                            "daño": 7    
+                        },
+                        "Bruja": {
+                            "descripcion": "Usa pociones de daño, veneno y lentitud.",
+                            "vida": 52,
+                            "daño": 6    
+                        },
+                        
+                        "Pillager": {
+                            "descripcion": "Dispara con ballesta.",
+                            "vida": 24,
+                            "daño": 6    
+                        },
+                        
+                        
+                        "Warden": {
+                            "descripcion": "Mob ciego que detecta vibraciones. Extremadamente peligroso.",
+                            "vida": 500,
+                            "daño": 90   
+                        }
+                    
+                    },
+
+                    "pasivos": {
+                        
+                        "Vaca": {
+                            "descripcion": "Animal que da leche, cuero y carne.",
+                            "vida": 20, 
+                            "daño": 0
+                        },
+                        "Cerdo": {
+                            "descripcion": "Animal que da carne de cerdo.",
+                            "vida": 10,  
+                            "daño": 0
+                        },
+                        "Oveja": {
+                            "descripcion": "Provee lana y carne.",
+                            "vida": 8,   
+                            "daño": 0
+                        },
+                        "Gallina": {
+                            "descripcion": "Da huevos y carne.",
+                            "vida": 4,   
+                            "daño": 0
+                        },
+                        
+                        
+                        "Caballo": {
+                            "descripcion": "Usado para montar y transportar.",
+                            "vida": 24,  
+                            "daño": 0
+                        },
+                        
+                        
+                        "Gato": {
+                            "descripcion": "Doméstico, aleja creepers.",
+                            "vida": 10,  
+                            "daño": 0
+                        },
+                        "Loro": {
+                            "descripcion": "Ave que puede imitar sonidos de mobs.",
+                            "vida": 6,  
+                            "daño": 0
+                        }
+                        
+                        
+                        }
+                        
+                    }
+                    
+                }
+
+            },
+        
+        "nether": {
+            "biomas":{
+                "nether_wastes": {
+                    "descripcion": "Zona principal del Nether con netherrack y lava.",
+                    "tipo": "infernal"
+                },
+                "crimson_forest": {
+                    "descripcion": "Bosque rojo con hongos y piglins.",
+                    "tipo": "infernal"
+                },
+                "warped_forest": {
+                    "descripcion": "Bosque azul verdoso con hongos deformados y enderman.",
+                    "tipo": "infernal"
+                },
+                "soul_sand_valley": {
+                    "descripcion": "Valle cubierto de arena de almas y huesos.",
+                    "tipo": "infernal"
+                },
+                "basalt_deltas": {
+                    "descripcion": "Zona volcánica con basaltos y magma cubes.",
+                    "tipo": "infernal"
+                }
+            },
+            "mobs":{
+                "hostil":{
+                    "Ghast": {
+                        "descripcion": "Dispara bolas de fuego explosivas.",
+                        "vida": 20,
+                        "daño": 18   
+                    },
+                    "Blaze": {
+                        "descripcion": "Dispara bolas de fuego incendiarias.",
+                        "vida": 20,
+                        "daño": 6    
+                    },
+                    "Wither Skeleton": {
+                        "descripcion": "Con efecto de marchitez en golpe.",
+                        "vida": 20,
+                        "daño": 10   
+                    },
+                    "Magma Cube (Grande)": {
+                        "descripcion": "Brinca y daña al chocar.",
+                        "vida": 16,
+                        "daño": 6   
+                    },
+                    "Hoglin": {
+                        "descripcion": "Bestia agresiva del Nether.",
+                        "vida": 40,
+                        "daño": 12   
+                    },
+                    "Piglin Bruto": {
+                        "descripcion": "Versión hostil del Piglin, gran daño.",
+                        "vida": 50,
+                        "daño": 15   
+                    }
+                },
+                "pasivos":{
+                    "Piglin (neutral)": {
+                        "descripcion": "Neutral a menos que el jugador ataque o no lleve armadura dorada.",
+                        "vida": 32,  
+                        "daño": 6    
+                    },
+                    "Strider": {
+                        "descripcion": "Usado para cruzar lava, pasivo.",
+                        "vida": 20,
+                        "daño": 0
+                        } 
+                    }
+                }
+            
+        },
+
+        "end": {
+            "biomas": {
+                "end_barrens": {
+                    "descripcion": "Zona vacía del End cerca de las islas exteriores.",
+                    "tipo": "vacío"
+                },
+                "end_midlands": {
+                    "descripcion": "Llanuras flotantes del End entre los bordes y centros.",
+                    "tipo": "vacío"
+                },
+                "end_highlands": {
+                    "descripcion": "Áreas elevadas del End con coros y ciudades del End.",
+                    "tipo": "vacío"
+                },
+                "end_small_end_islands": {
+                    "descripcion": "Pequeñas islas flotantes alejadas en el End.",
+                    "tipo": "vacío"
+                }
+                },
+            "mobs":{
+                "hostil":{
+                    "Enderman": {
+                        "descripcion": "Neutral hasta ser provocado.",
+                        "vida": 40,
+                        "daño": 7
+                    },
+                    "Ender Dragon": {
+                        "descripcion": "Jefe final del End.",
+                        "vida": 200,
+                        "daño": 10   
+                    },
+                    "Shulker": {
+                        "descripcion": "Lanza proyectiles que causan levitación.",
+                        "vida": 60,
+                        "daño": 4
+                        },
+                
+                "pasivos": {
+                    "descripcion": "No hay mobs pasivos en el End."
+                    }
+                }
+            }
+        }
 }
+
