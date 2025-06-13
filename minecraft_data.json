@@ -168,9 +168,9 @@
                         
                     }
                     
-                }
+                },
 
-            },
+            
         
         "nether": {
             "biomas":{
@@ -282,7 +282,8 @@
                         },
                 
                 "pasivos": {
-                    "descripcion": "No hay mobs pasivos en el End."
+                    "_descripcion": "No hay mobs pasivos en el End."
+                        }
                     }
                 }
             }

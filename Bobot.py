@@ -107,7 +107,7 @@ async def mundos(ctx):
     await ctx.send(mensaje)
 
 @bot.command()
-async def biomas_overworld(ctx):
+async def biomas(ctx):
     mensaje = ""
     for biomas, info in data["mundos"]["overworld"]["biomas"].items():
         mensaje += f"🌱 **{biomas.capitalize()}**\n"
@@ -148,7 +148,38 @@ async def mobs(ctx):
 
     await ctx.send(mensaje)
 
+@bot.command()
+async def mobs_nether(ctx):
+    mensaje = ""
+    nether_mobs = data["mundos"]["nether"]["mobs"]
+    
+    for tipo, mobs in nether_mobs.items():  # tipo será "hostil" o "pasivos"
+        mensaje += f"🐶 **{tipo.capitalize()}**:\n"
+        for mob, info in mobs.items():
+            mensaje += f"🐾 **{mob.capitalize()}**\n"
+            mensaje += f"📜 Descripción: {info['descripcion']}\n"
+            mensaje += f"💔 Vida: {info['vida']}\n"
+            mensaje += f"⚔️ Daño: {info['daño']}\n\n"
 
+    await ctx.send(mensaje)
+
+@bot.command()
+async def mobs_end(ctx):
+    mensaje = ""
+    end_mobs = data["mundos"]["end"]["mobs"]
+    
+    for tipo, mobs in end_mobs.items():
+        mensaje += f"🐶 **{tipo.capitalize()}**:\n"
+        for mob, info in mobs.items():
+            if not isinstance(info, dict) or 'vida' not in info or 'daño' not in info:
+                continue
+
+            mensaje += f"🐾 **{mob.capitalize()}**\n"
+            mensaje += f"📜 Descripción: {info['descripcion']}\n"
+            mensaje += f"💔 Vida: {info['vida']}\n"
+            mensaje += f"⚔️ Daño: {info['daño']}\n\n"
+
+    await ctx.send(mensaje)
     
 
 
