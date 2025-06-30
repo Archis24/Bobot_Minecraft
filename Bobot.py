@@ -200,7 +200,26 @@ async def mobs_end(ctx):
             mensaje += f"⚔️ Daño: {info['daño']}\n\n"
 
     await ctx.send(mensaje)
-    
+
+@bot.command()
+async def crafteo(ctx, *, item, help="algunos crafteos de Minecraft"):
+    item = item.lower().replace(" ", "_")  # Convierte lo que el usuario escribe
+    ruta_imagen = f"crafteos/{item}.png"  # Busca esa imagen en la carpeta 'crafteos'
+
+    if os.path.exists(ruta_imagen):  # Si la imagen existe
+        await ctx.send(file=discord.File(ruta_imagen))  # Envía la imagen
+    else:
+        await ctx.send("❌ No encontré el crafteo de ese ítem.")
+
+@bot.command()
+async def pociones(ctx, *, item, help="algunas pociones de Minecraft"):
+    item = item.lower().replace(" ", "_")  # Convierte lo que el usuario escribe
+    ruta_imagen = f"pociones/{item}.png"  # Busca esa imagen en la carpeta 'crafteos'
+
+    if os.path.exists(ruta_imagen):  # Si la imagen existe
+        await ctx.send(file=discord.File(ruta_imagen))  # Envía la imagen
+    else:
+        await ctx.send("❌ No encontré la receta de esa pocion.")
 
 
 TOKEN = os.getenv("DISCORD_TOKEN")
